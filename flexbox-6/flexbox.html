@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Flexbox</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="flexbox.css" />
+    <!--    <script type="text/javascript" src="https://tap.ibhubs.in/utils/flex-item-width.js"></script>-->
+  </head>
+  <style>
+    .flexbox {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    .header {
+      width: 100%;
+      background-color: orange;
+      flex-grow: 1;
+
+    }
+
+    .navigation {
+
+      flex-grow: 1;
+      width: 300px;
+      background-color: green;
+
+    }
+
+    .main {
+      height: 300px;
+      width: 500px;
+      background-color: white;
+      flex-grow: 1;
+    }
+
+    .footer {
+
+      width: 100%;
+      background-color: grey;
+      flex-grow: 1;
+
+
+    }
+
+    .article {
+      border: 2px solid black;
+      height: 200px;
+      margin: 30px;
+    }
+
+    .section {
+      border: 2px dotted black;
+      height: 60px;
+      margin: 15px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 15px;
+      font-family: bold;
+
+    }
+  </style>
+
+  <body>
+    <div class="flexbox">
+      <div class="header">
+        <P>header</P>
+      </div>
+      <div class="navigation">
+        <p>navigation</p>
+      </div>
+      <div class="main">
+        <p>main</p>
+        <div class="article">
+          <p>article</p>
+          <div class="section">
+            <p>section</p>
+          </div>
+          <div class="section">
+            <p>section</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p> Footer</p>
+      </div>
+    </div>
+  </body>
+
+</html>
